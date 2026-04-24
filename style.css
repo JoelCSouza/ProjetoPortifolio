@@ -1,0 +1,326 @@
+:root{
+    --cor1: #0f162dd0;
+    --cor2: #155dfc;
+    --cor3: #50a2ff;
+    --cor4: #fdc700;
+    --cor5: #38498186;
+    --corfonte1: #ffffff;
+    --corfonte2: linear-gradient(45deg, #55a0ff, #ac48ff);
+    --corfonte3: #6f93ff;
+}
+
+/*limpeza de margens e preenchimentos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(ImagensPort/BackgroundDark.jpeg) no-repeat fixed center / cover;
+    font-family: Arial, sans-serif;
+    color: var(--corfonte1);
+}
+/*-------------------------------------------------------------------------------------------------------*/
+/*----Cabeçalho e rodapé----*/
+/* Estilo do cabeçalho */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.elemento p{
+    font-size: 24px;
+    color: var(--corfonte1);
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+    width: 120px;
+    color: var(--corfonte3);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: var(--corfonte1);
+    transition: 0.3s;
+}
+
+nav ul li a.active{
+    background-color: var(--cor2);
+    color: var(--corfonte1);
+    border: solid 1px var(--corfonte1);
+    padding: 12px;
+    border-radius: 8px;
+
+}
+
+#botaoTema button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/*Rodapé*/
+footer{
+    height: 50px;
+    padding: 20px;
+    border-top: solid 1px var(--corfonte3);
+    font-size: 18px;
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*----Página Sobre Mim----*/
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    
+}
+
+.conteiner-img{
+    width: 248px;
+    height: 248px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--corfonte2);
+    margin-right: 50px;
+}
+
+.imagem-perfil{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    
+}
+
+.apresentacao h1{
+    font-size: 44px;
+    color: var(--corfonte2);
+    margin-bottom: 20px;
+}
+
+.apresentacao p{
+    max-width: 600px;
+    color: var(--corfonte1);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/*Seção sobre mim*/
+
+.sobre-mim{
+    width: 70%;
+    background-color: var(--cor5);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px var(--corfonte3);
+    font-size: 18px;
+    text-align: justify;
+    line-height: 35px;
+    transition: transform 0.3s;
+}
+
+.sobre-mim:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.sobre-mim h2{
+    color: var(--corfonte2);
+    margin-bottom: 20px;
+}
+
+/*Habilidades*/
+.conteiner-habilidades{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+}
+.habilidades{
+    width: 250px;
+    height: 250px;
+    background-color: var(--cor5);
+    align-items: first baseline;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px var(--corfonte3);
+    transition: transform 0.3s;
+}
+
+.habilidades:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.habilidades h2{
+    color: var(--corfonte2);
+    margin-bottom: 20px;
+}
+
+.habilidades ul{
+    color: var(--corfonte1);
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+i{
+    font-size: 30px;
+    color: var(--corfonte3);
+    margin-bottom: 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*----Estilo Página Formação----*/
+
+.container-formacao-cursos{
+    width: 70%;
+    align-items: center;
+    margin: 150px auto;
+    
+}
+
+.formacao{
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    background-color: var(--cor5);
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px var(--corfonte3);
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.formacao:hover{
+    transform: translate(10px);
+    transition: 0.3s;
+}
+
+.formacao-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 40px;
+    height: 100%;
+}
+
+.cursos{
+    width: 100%;
+    margin-top: 30px;
+    background-color: var(--cor5);
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px var(--corfonte3);
+}
+
+.curso{
+    background-color: var(--cor5);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.curso:hover{
+    border: solid 1px var(--corfonte3);
+    transform: translate(10px);
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*----Estilo Página Portifólio----*/
+
+.conteiner-projetos{
+    margin-top: 150px;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.conteiner-projetos h1{
+    font-size: 30px;
+}
+
+.conteiner-cards{
+    display: grid;
+    grid-template-columns: 650px 650px;
+    gap: 20px;
+}
+
+.projetos{
+    background-color: var(--cor5);
+    margin-top: 30px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    border-radius: 10px;
+    border: solid 1px var(--corfonte3);
+    transition: transform 0.3s;
+}
+
+.projetos:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.imagem-projeto{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    margin-bottom: 10px;;
+} 
+
+.text-projeto{
+    text-align: justify;
+    padding: 10px;
+    line-height: 25px;
+} 
+
+.text-projeto h2{
+    padding-bottom: 20px;
+}
+
+.text-projeto a{
+    color: var(--cor4);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.text-projeto a:hover{
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
