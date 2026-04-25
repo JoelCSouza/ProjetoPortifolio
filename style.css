@@ -452,3 +452,122 @@ i{
     transition: 0.3s;
 }
 
+/*---------------------------------------------------------------------------------------------------------*/
+/*----Estilo responsividade----*/
+
+/*Tablet*/
+
+@media (max-width: 1000px){
+    .apresentacao{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteiner-img{
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 170px;
+        height: 170px;
+    }
+    .imagem-perfil{
+       width: 95%; 
+       height: 95%;
+    }
+
+    .conteiner-habilidades{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .conteiner-projetos{
+        margin: 150px 20px 200px 20px;
+    }
+
+    .conteiner-cards{
+        grid-template-columns: 100%;
+    }
+
+    .conteiner-contato{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner-formulario, .informacoes-contato{
+        width: 100%;
+    }
+}
+
+/*Mobile*/
+ @media (max-width: 600px){
+    /*header*/
+    header{
+        
+        
+    }
+
+    /*pagina sobre mim*/
+    .conteiner-img{
+        width: 120px;
+        height: 120px;
+    }
+
+     .apresentacao h1{
+         font-size: 28px;
+     }
+
+     .apresentacao p{
+         font-size: 16px;
+     }
+
+     .conteiner-habilidades{
+         width: 90%;
+     }
+
+     .habilidades{
+         width: 100%;
+     }
+
+     /*formação*/
+
+    .container-formacao-cursos{
+        width: 90%;
+    }
+
+    .formacao{
+        font-size: 16px;
+    }
+
+    .curso{
+        width: 100%;
+        
+    }
+    
+    /*portifolio*/
+    .projetos{
+       width: 100%;
+    }
+
+    .imagem-projeto{
+        height: 250px;
+    }
+
+    /*contato*/
+    .conteiner-contato{
+        width: 85%;
+        margin:150px auto;
+    }
+
+    .conteiner-formulario{
+        width: 100%;
+    }
+
+    .sociais a{
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .sociais i{
+        font-size: 30px;
+    }
+ }
