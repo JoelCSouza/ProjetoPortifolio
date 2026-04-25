@@ -262,7 +262,7 @@ i{
 /*----Estilo Página Portifólio----*/
 
 .conteiner-projetos{
-   
+
     margin: 150px 100px 200px 150px;
     display: grid;
     justify-content: center;
@@ -324,4 +324,58 @@ i{
     font-size: 20px;
     transition: 0.3s;
     cursor: pointer;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*----Estilo Página Contato----*/
+
+.conteiner-contato{
+    width: 70%;
+    margin: 150px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner-contato h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    width: 70%;
+    padding: 30px;
+    border-radius: 15px;
+    border: solid 1px var(--corfonte3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--cor5);
+    line-height: 40px;
+}
+
+.input-campo{
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 7px;
+    border: solid 1px var(--corfonte3);
+    background-color: var(--cor1);
+    color: var(--corfonte1);
+}
+
+.botao-enviar{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    border: solid 1px var(--corfonte3);
+    background-color: var(--cor2);
+    color: var(--corfonte1);
+    font-size: 18px;
+}
+
+.botao-enviar:hover{
+    transform: scaley(1.03);
+    cursor: pointer;
+    border: solid   1px var(--corfonte1);
+    font-weight: bolder;
 }
