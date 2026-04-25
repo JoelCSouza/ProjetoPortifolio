@@ -262,10 +262,11 @@ i{
 /*----Estilo Página Portifólio----*/
 
 .conteiner-projetos{
-    margin-top: 150px;
+   
+    margin: 150px 100px 200px 150px;
     display: grid;
     justify-content: center;
-    margin-bottom: 100px;
+    
 }
 
 .conteiner-projetos h1{
