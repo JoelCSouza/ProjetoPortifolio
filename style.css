@@ -37,7 +37,7 @@ header{
 }
 
 .elemento p{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--corfonte1);
     font-weight: bold;
 }
@@ -55,7 +55,7 @@ nav ul li a{
     width: 120px;
     color: var(--corfonte3);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -84,7 +84,7 @@ footer{
     height: 50px;
     padding: 20px;
     border-top: solid 1px var(--corfonte3);
-    font-size: 18px;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -118,7 +118,7 @@ footer{
 }
 
 .apresentacao h1{
-    font-size: 44px;
+    font-size: 2.75rem;
     color: var(--corfonte2);
     margin-bottom: 20px;
 }
@@ -126,7 +126,7 @@ footer{
 .apresentacao p{
     max-width: 600px;
     color: var(--corfonte1);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
 }
 
@@ -139,7 +139,7 @@ footer{
     padding: 20px;
     border-radius: 10px;
     border: solid 1px var(--corfonte3);
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: justify;
     line-height: 35px;
     transition: transform 0.3s;
@@ -184,13 +184,13 @@ footer{
 
 .habilidades ul{
     color: var(--corfonte1);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
     margin-left: 20px;
 }
 
 i{
-    font-size: 30px;
+    font-size: 2rem;
     color: var(--corfonte3);
     margin-bottom: 20px;
 }
@@ -213,11 +213,15 @@ i{
     padding: 20px;
     border-radius: 10px;
     border: solid 1px var(--corfonte3);
-    font-size: 18px;
+    font-size: 1.125rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     transition: transform 0.3s;
+}
+
+.formacao i{
+    font-size: 2.8rem;
 }
 
 .formacao:hover{
@@ -270,13 +274,14 @@ i{
 }
 
 .conteiner-projetos h1{
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .conteiner-cards{
     display: grid;
-    grid-template-columns: 650px 650px;
+    grid-template-columns: 650px 650px;;
     gap: 20px;
+    margin-left: 3rem;
 }
 
 .projetos{
@@ -317,11 +322,11 @@ i{
     color: var(--cor4);
     font-weight: bold;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .text-projeto a:hover{
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -338,7 +343,7 @@ i{
 }
 
 .conteiner-contato h1{
-    font-size: 30px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -374,7 +379,7 @@ i{
     border: solid 1px var(--corfonte3);
     background-color: var(--cor2);
     color: var(--corfonte1);
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .botao-enviar:hover{
@@ -385,6 +390,10 @@ i{
 }
 
 /*estilo das informações de contato*/
+.conteiner-contato{
+    width: 90%;
+    margin: 120px auto;
+}
 
 .informacoes-contato{
     display: flex;
@@ -409,7 +418,7 @@ i{
 
 .contato p{
     color: var(--corfonte1);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 30px;
     padding-bottom: 20px;
 }
@@ -425,21 +434,25 @@ i{
     padding: 20px;
     border-radius: 15px;
     border: solid 1px var(--corfonte3);
-    margin-top: 55px;
+    margin-top: 55px;   
+}
+
+.icon-social{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .sociais a{
     color: var(--corfonte1);
-    font-size: 30px;
-    margin-right: 20px;
-    padding: 20px 10px 10px 10px;
+    font-size: 2rem;
+    padding: 15px 15px 0 15px;
     background-color: var(--cor1);
     border-radius: 10px;
-    border: solid 1px var(--corfonte3);
+    border: solid 1px var(--cor5);
 }
 
 .sociais i{
-    font-size: 40px;
+    font-size: 2.25rem
 }
 
 .sociais a:hover{
@@ -457,7 +470,7 @@ i{
 
 /*Tablet*/
 
-@media (max-width: 1000px){
+@media (max-width: 55.31rem){
     .apresentacao{
         flex-direction: column;
         text-align: center;
@@ -465,7 +478,7 @@ i{
 
     .conteiner-img{
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         width: 170px;
         height: 170px;
     }
@@ -488,6 +501,16 @@ i{
         grid-template-columns: 100%;
     }
 
+    .projetos{
+       width: 100%;
+       padding: 1rem 1rem 3.5rem 1rem;
+    }
+
+    .imagem-projeto{
+        width: 100%;
+        height: 70%;
+    }
+
     .conteiner-contato{
         flex-direction: column;
         align-items: center;
@@ -499,7 +522,7 @@ i{
 }
 
 /*Mobile*/
- @media (max-width: 600px){
+ @media (max-width: 34.38rem){
     /*header*/
     header{
         
@@ -512,12 +535,16 @@ i{
         height: 120px;
     }
 
-     .apresentacao h1{
-         font-size: 28px;
+    .apresentacao h1{
+         font-size: 2rem;
      }
 
      .apresentacao p{
          font-size: 16px;
+     }
+
+     .sobre-mim{
+         width: 90%;
      }
 
      .conteiner-habilidades{
@@ -544,18 +571,49 @@ i{
     }
     
     /*portifolio*/
+    .conteiner-projetos{
+        width: 90%;
+        justify-content: center;
+    }
+
+    .conteiner-cards{
+        width: 100%;
+        margin-left: 0;
+    }
     .projetos{
        width: 100%;
+       padding: 1rem;
     }
 
     .imagem-projeto{
         height: 250px;
     }
 
+    /*formação*/
+    .formacao h2{
+        font-size: 1.25rem;
+    }
+
+    .formacao i{
+        font-size: 2.5rem;
+    }
+    .curso{
+        margin: 1rem 0;
+    }
+
+    .formacao-info{
+        margin-left: 1rem;
+    }
+
     /*contato*/
     .conteiner-contato{
-        width: 85%;
-        margin:150px auto;
+        width: 90%;
+        margin:120px auto;
+        font-size: 1rem;
+    }
+
+    .contato{
+        font-size: 1rem;
     }
 
     .conteiner-formulario{
@@ -563,8 +621,8 @@ i{
     }
 
     .sociais a{
-        font-size: 25px;
-        padding: 10px;
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem 0 0.5rem;
     }
 
     .sociais i{
