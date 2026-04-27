@@ -17,28 +17,23 @@
 
         <nav class="menu-desktop">
             <ul>
-                <li><a href="index.html" class="menu-item active">Sobre mim</a></li>
-                <li><a href="formacao.html" class="menu-item ">Formação</a></li>
-                <li><a href="portifolio.html" class="menu-item ">Portifólio</a></li>
-                <li><a href="contato.html" class="menu-item ">Contato</a></li>
+                <li class="hideMobile"><a href="index.html" class="menu-item active">Sobre mim</a></li>
+                <li class="hideMobile"><a href="formacao.html" class="menu-item ">Formação</a></li>
+                <li class="hideMobile"><a href="portifolio.html" class="menu-item ">Portifólio</a></li>
+                <li class="hideMobile"><a href="contato.html" class="menu-item ">Contato</a></li>
+                <li class="hideDesktop" onclick=showMenuResponsivo() ><a href="#" class="menu-item"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
 
         <nav class="menu-responsivo">
             <ul>
-                <li class="iconmen"><a href="#" class="menu-item active"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li onclick=hideMenuResponsivo() class="iconmen"><a href="#" class="menu-item active"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="index.html" class="menu-item active">Sobre mim</a></li>
                 <li><a href="formacao.html" class="menu-item ">Formação</a></li>
                 <li><a href="portifolio.html" class="menu-item ">Portifólio</a></li>
                 <li><a href="contato.html" class="menu-item ">Contato</a></li>
-                <li>
-                    <div id="botaoTema-resp">
-                    <button id="theme-toggle">Mudar Tema</button>
-        </div>
-                </li>
             </ul>
         </nav>
-
         <div id="botaoTema">
             <button id="theme-toggle">Mudar Tema</button>
         </div>
@@ -96,5 +91,20 @@
     <footer>
         <p>2026 Meu Portifólio.</p>
     </footer> 
+
+    <script>
+        function showMenuResponsivo(){
+            const menuResponsivo = document.querySelector(".menu-responsivo");
+            const menuDesktop = document.querySelector(".menu-desktop")
+            menuResponsivo.style.display = "flex";
+            menuDesktop.style.display = "none";
+        }
+        function hideMenuResponsivo(){
+            const menuResponsivo = document.querySelector(".menu-responsivo");
+            const menuDesktop = document.querySelector(".menu-desktop")
+            menuResponsivo.style.display = "none";
+            menuDesktop.style.display = "flex";
+        }
+    </script>
 </body>
 </html>
