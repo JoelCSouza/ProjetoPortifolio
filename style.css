@@ -517,6 +517,10 @@ i{
      .hideMobile{
         display: none;
     }
+
+    .menu-responsivo{
+        padding-top: 21rem;
+    }
      
 
     .apresentacao{
