@@ -579,6 +579,11 @@ i{
     .elemento p{
         font-size: 1rem;
     }
+
+    .menu-responsivo{
+        width: 14rem;
+        margin-right: 1rem;
+    }
    
 
     /*pagina sobre mim*/
