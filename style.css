@@ -626,6 +626,11 @@ i{
     .conteiner-formulario, .informacoes-contato{
         width: 100%;
     }
+
+    .sociais i{
+        font-size: 2rem;
+        padding: 0.5rem 0.5rem 0 0.7rem;
+    }
 }
 
 /*Mobile*/
@@ -736,9 +741,11 @@ i{
     .sociais a{
         font-size: 1rem;
         padding: 0.5rem 0.5rem 0 0.5rem;
+        width: 4rem;
     }
 
     .sociais i{
         font-size: 1.75rem;
+        padding: 0.7rem 0.5rem 0 0.7rem;
     }
  }
