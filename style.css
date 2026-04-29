@@ -20,7 +20,45 @@ body{
     font-family: Arial, sans-serif;
     color: var(--corfonte1);
 }
-/*-------------------------------------------------------------------------------------------------------*/
+
+/*Tema light*/
+body.light { background: url(ImagensPort/BackgroundLight.png) no-repeat fixed center / cover;
+  color: #021963;
+}
+
+body.light header p{
+    color: var(--corfonte1);
+}
+
+body.light a {
+  color: #0077cc;
+}
+
+body.light p, body.light li{
+    color: #021963;
+}
+
+body.light i{
+    color: #021963;
+}
+
+body.light .sobre-mim, body.light .habilidades, body.light .formacao, body.light .cursos, body.light .projetos, body.light .formulario, body.light .contato, body.light .sociais{
+    background-color: transparent;
+}
+
+body.light .curso {
+    background-color: transparent;
+    border: solid 1px var(--corfonte3);
+}
+
+body.light .icon-social a, body.light .input-campo {
+    background-color: #38498138;;
+    backdrop-filter: blur(10px);
+    color: #021963;
+    
+}
+
+/*------------------------------------------------------------------------------------------------------*/
 /*----Cabeçalho e rodapé----*/
 /* Estilo do cabeçalho */
 header{
@@ -105,9 +143,23 @@ header{
     }
 
 #botaoTema button {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
+    background-color: var(--cor1);
+    border: none;
+}
+
+#sol, #lua {
+    display: none;
+}
+
+body:not(.light) #sol {
+    display: inline;
+}
+
+body.light #lua {
+    display: inline;
 }
 
 /*Rodapé*/
@@ -198,7 +250,7 @@ footer{
     gap: 1.5rem;
 }
 .habilidades{
-    width: 250px;
+    width: 300px;
     height: 250px;
     background-color: var(--cor5);
     align-items: first baseline;
@@ -224,6 +276,7 @@ footer{
     line-height: 1.5;
     margin-left: 20px;
 }
+
 
 i{
     font-size: 2rem;
@@ -552,9 +605,12 @@ i{
         grid-template-columns: 100%;
     }
 
-    .projetos{
-       width: 100%;
-       padding: 1rem 1rem 3.5rem 1rem;
+    .habilidades{
+         width: 100%;
+    }
+    
+    .habilidades ul, i{
+        padding-left: 2rem;
     }
 
     .imagem-projeto{
