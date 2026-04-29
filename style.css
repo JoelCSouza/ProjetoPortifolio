@@ -55,9 +55,17 @@ body.light .icon-social a, body.light .input-campo {
     background-color: #38498138;;
     backdrop-filter: blur(10px);
     color: #021963;
-    
 }
 
+body.light .sociais a:hover{
+    color: var(--cor2);
+    border: solid 2px var(--cor2);
+}
+
+body.light .sociais a:hover i{
+    color: var(--cor2);
+    transition: 0.3s;
+}
 /*------------------------------------------------------------------------------------------------------*/
 /*----Cabeçalho e rodapé----*/
 /* Estilo do cabeçalho */
