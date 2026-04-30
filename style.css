@@ -130,6 +130,7 @@ header{
         justify-content: center;
         backdrop-filter: blur(10px);
         z-index: 999;
+        box-shadow: 3px 3px 5px var(--cor1);
     }
 
     
@@ -148,6 +149,10 @@ header{
         font-size: 1.25rem;
         text-decoration: none;
         color: #ffffff;  
+    }
+
+    .menu-responsivo ul li a:hover{
+        text-decoration: underline;
     }
 
 #botaoTema button {
